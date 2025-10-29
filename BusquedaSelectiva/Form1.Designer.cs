@@ -28,13 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dgvTabla = new System.Windows.Forms.DataGridView();
+            this.txtBoxBuscador = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgvTabla
+            // 
+            this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTabla.Location = new System.Drawing.Point(12, 47);
+            this.dgvTabla.Name = "dgvTabla";
+            this.dgvTabla.Size = new System.Drawing.Size(776, 391);
+            this.dgvTabla.TabIndex = 0;
+            // 
+            // txtBoxBuscador
+            // 
+            this.txtBoxBuscador.Location = new System.Drawing.Point(13, 21);
+            this.txtBoxBuscador.Name = "txtBoxBuscador";
+            this.txtBoxBuscador.Size = new System.Drawing.Size(324, 20);
+            this.txtBoxBuscador.TabIndex = 1;
+            this.txtBoxBuscador.TextChanged += new System.EventHandler(this.txtBoxBuscador_TextChanged);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtBoxBuscador);
+            this.Controls.Add(this.dgvTabla);
+            this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgvTabla;
+        private System.Windows.Forms.TextBox txtBoxBuscador;
     }
 }
 
