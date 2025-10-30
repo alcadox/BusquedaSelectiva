@@ -108,14 +108,13 @@ namespace BusquedaSelectiva
                         celda.Style.Font = new Font(dgvTabla.Font, FontStyle.Regular);
                     }
                 }
+            }
 
-                // Seleccionamos la primera coincidencia si existe
-                if (celdasCoincidentes.Count > 0)
-                {
-                    DataGridViewCell primeraCelda = (DataGridViewCell)celdasCoincidentes[0];
-                    dgvTabla.CurrentCell = primeraCelda;
-                }
-
+            // Seleccionamos la primera coincidencia si existe
+            if (celdasCoincidentes.Count > 0)
+            {
+                DataGridViewCell primeraCelda = (DataGridViewCell)celdasCoincidentes[0];
+                dgvTabla.CurrentCell = primeraCelda;
             }
         }
 
